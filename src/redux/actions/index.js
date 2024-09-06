@@ -5,7 +5,7 @@ export const FETCH_MUSIC_FAILURE = 'FETCH_MUSIC_FAILURE';
 // Action Creators
 export const setMusicData = (genre, data) => ({
   type: SET_MUSIC_DATA,
-  payload: { genre, data }
+  payload: { data }
 });
 
 export const fetchMusicFailure = (error) => ({

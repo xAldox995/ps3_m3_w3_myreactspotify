@@ -14,7 +14,7 @@ const MusicSection = ({ genre, artistName }) => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        dispatch(setMusicData(genre, data.tracks));
+        dispatch(setMusicData(genre, data.data));
       } catch (error) {
         console.error('Failed to fetch music:', error);
       }
