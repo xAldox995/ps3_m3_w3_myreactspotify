@@ -14,6 +14,7 @@ const MusicSection = ({ genre, artistName }) => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
+        console.log(data)
         dispatch(setMusicData(genre, data.data));
       } catch (error) {
         console.error('Failed to fetch music:', error);
@@ -25,7 +26,7 @@ const MusicSection = ({ genre, artistName }) => {
 
   return (
     <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3">
-       {data.tracks.map(track => <AlbumCard key={track.id} singleSong={track} />)}
+       {/* {data.tracks.map(track => <AlbumCard key={track.id} singleSong={track} />)} */}
     </div>
   );
 };
