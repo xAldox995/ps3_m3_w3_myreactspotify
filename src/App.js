@@ -13,9 +13,9 @@ function App() {
       <header>
         <Sidebar />
       </header>
-      <main>
+      {/* <main>
         <MusicSection  artistName='Queen'/>
-      </main>
+      </main> */}
       <footer>
         <PlayerControls />
       </footer>
