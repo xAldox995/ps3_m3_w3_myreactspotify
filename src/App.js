@@ -4,6 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.min.css'
 import './App.css';
 
 import Sidebar from './components/SibeBar';
+import PlayerControls from './components/PlayerComp';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
       </main>
       <footer>
-
+        <PlayerControls />
       </footer>
     </div>
   );
