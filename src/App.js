@@ -5,6 +5,7 @@ import './App.css';
 
 import Sidebar from './components/SibeBar';
 import PlayerControls from './components/PlayerComp';
+import MusicSection from './components/MusicSection';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Sidebar />
       </header>
       <main>
-
+        <MusicSection />
       </main>
       <footer>
         <PlayerControls />
